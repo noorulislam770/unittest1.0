@@ -27,6 +27,7 @@ while(True):
 for i in range(len(arr1)):
     arr3.append(arr1[i] / arr2[i])
 
+print("Program Part ---")
 print("Array 1")
 print(arr1)
 print("Array 2")
