@@ -1,12 +1,14 @@
-
+import random
+import math
 
 arr1 = []
 arr2 = []
 arr3 = []
 reps = 10
-i = 0
+
 while(True):
-    number = int(input("Enter a number : "))
+    # number = int(input("Enter a number : "))
+    number = random.randint(0,100) 
     if (number % 10 == 0):
         print("Enter a number not multiple of 10")
     else :
@@ -25,9 +27,9 @@ while(True):
         break
  
 for i in range(len(arr1)):
-    arr3.append(arr1[i] / arr2[i])
+    arr3.append(math.floor(arr1[i] / arr2[i]))
 
-print("Program Part ---")
+print("\nprogram part --- \n")
 print("Array 1")
 print(arr1)
 print("Array 2")
